@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Qual é a placa?</title>
+<script src="index.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="page">
+        <h2 class="title-area">
+            <div class="title">Qual é a placa?</div>
+            <div class="subtitle">Insira uma foto de uma placa de trânsito e nós tentaremos identifica-la para você</div>
+        </h2>
+        
+        <input id="photo" class="hidden" accept="image/*" type="file" onchange="sendPhoto(event)"></input>
+        <button class="click-for-photo" onclick="clickForPhoto()">Enviar foto</button>
+        <div class="picture-square">
+            <img class="picture-img" id="photo-show" src="placeholder.jpg" alt="">
+        </div>
+        <div id="response-box" class="response-box"></div>
+    </div>
+</body>
+
+</html> 
